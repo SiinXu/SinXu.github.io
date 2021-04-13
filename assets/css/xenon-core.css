@@ -913,18 +913,21 @@ body {
         font-size: 12px
     }
 }
+/*
+侧边栏菜单
+*/
 
 .sidebar-menu {
     display: table-cell;
     position: relative;
     width: 280px;
-    background: #2c2e2f;
+    background: #FFFFFF;
     z-index: 1
 }
 
 .sidebar-menu .logo-env {
     padding: 19px 45px;
-    border-bottom: 1px solid #313437
+    border-bottom: 1px solid #8E8E8E
 }
 
 .sidebar-menu .logo-env .logo {
@@ -942,7 +945,7 @@ body {
 }
 
 .sidebar-menu .logo-env .settings-icon a {
-    color: #979898;
+    color: #D1D6F9;
     line-height: 1
 }
 
@@ -952,7 +955,7 @@ body {
 }
 
 .sidebar-menu .logo-env .settings-icon a:hover {
-    color: #fff
+    color: #8E8E8E
 }
 
 .sidebar-menu .main-menu {
@@ -971,11 +974,11 @@ body {
 }
 
 .sidebar-menu .main-menu a {
-    color: #979898;
+    color: #8E8E8E;
     text-decoration: none;
     display: block;
     padding: 13px 5px;
-    border-bottom: 1px solid #313437
+    border-bottom: 1px solid #8E8E8E
 }
 
 .sidebar-menu .main-menu a>i {
@@ -1001,11 +1004,11 @@ body {
 }
 
 .sidebar-menu .main-menu a:hover {
-    color: #fff
+    color: #D961A2
 }
 
 .sidebar-menu .main-menu li.active>a {
-    color: #fff
+    color: #8E8E8E
 }
 
 .sidebar-menu .main-menu li.has-sub>a:before {
