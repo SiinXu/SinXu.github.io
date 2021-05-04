@@ -20,6 +20,35 @@
     <link rel="stylesheet" href="../assets/css/nav.css">
     <script src="../assets/js/jquery-1.11.1.min.js"></script>
 
+<style>
+  #main {
+    margin-top: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+
+  #qrcode img {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    display: block;
+  }
+
+  #qrcode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 225, 225, 0.6);
+    z-index: 9999;
+    display: none;
+  }
+</style>
+
+<script src = "http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE =" crossorigin="anonymous"></script>
     <script>
     var _hmt = _hmt || [];
     (function() {
@@ -78,7 +107,24 @@
                                         </br>
                                         <p>森逆在Viggo的基础上进行开发，添加了程序开发、产品设计、时间管理、效率提升等板块，以及一些新媒体运营的实用工具。</p>
                                         <p>希望森逆可以为互联网从业者提供便利，希望您在森逆的辅助下可以提升工作学习效率。</p>
-                                        <p>微信公众号关注<strong>森逆SinNil</strong> 一起解锁更多效率神器吧！ </p>
+                                        <p>微信公众号关注<button id = “main”>森逆SinNil</button>
+<div id = "qrcode">
+  <img id = "image" width = "100%" height = "100%"
+src  = "https://jkooll.github.io/src/images/wechat_qrcode.jpg">
+</div>
+
+<script>
+$(function() {
+  $("#main").click(function() {
+    $("#qrcode").fadeIn("slow");
+  });
+
+  $("#qrcode").click(function() {
+    $("#qrcode").fadeOut("slow");
+  })
+});
+</script>
+                                           一起解锁更多效率神器吧！ </p>
                                     </blockquote>
                                 </div>
                             </div>
